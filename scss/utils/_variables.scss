@@ -1,0 +1,16 @@
+:root {
+  --color-brand: #2b7fff;
+  --color-main: #011c44;
+  --color-white-opacity: rgba(255, 255, 255, 0.25);
+  --color-white: #ffffff;
+  --color-button: #dfdfdf;
+  --color-dark-gray: #4a4a4a;
+  --color-black: #000000;
+  --color-light-gray: #747272;
+  --color-dark-blue: #011f4a;
+  --color-yellow: #ffd02b;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1200px;

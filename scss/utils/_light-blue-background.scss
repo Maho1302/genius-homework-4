@@ -1,0 +1,19 @@
+.light-blue-background {
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 640px;
+  left: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    top: 1165px;
+    left: 0;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 1320px;
+    left: 0;
+  }
+}

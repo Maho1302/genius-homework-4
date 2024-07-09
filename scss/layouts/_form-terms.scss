@@ -1,0 +1,18 @@
+.form-terms {
+  width: 100%;
+  max-width: 218px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-light-gray);
+  text-align: center;
+
+  &__link {
+    color: var(--color-light-gray);
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--color-brand);
+    }
+  }
+}

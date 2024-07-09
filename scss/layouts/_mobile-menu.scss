@@ -1,0 +1,46 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  z-index: 3;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__nav {
+    margin: 16px 0 0 20px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    padding-bottom: 16px;
+  }
+
+  &__icon {
+    fill: var(--color-main);
+    margin-right: 16px;
+
+    &:hover {
+      fill: var(--color-brand);
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-main);
+    cursor: pointer;
+  }
+}

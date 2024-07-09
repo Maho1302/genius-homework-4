@@ -1,0 +1,88 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.grey-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    top: 918px;
+    right: 68px;
+    animation: spin 2000ms;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes star-spin {
+  0% {
+    transform: rotate(0turn) scale(1);
+  }
+  25% {
+    transform: rotate(1turn) scale(1);
+  }
+  50% {
+    transform: rotate(1turn) scale(1.5);
+  }
+  75% {
+    transform: rotate(0turn) scale(1.5);
+  }
+  100% {
+    transform: rotate(0turn) scale(1);
+  }
+}
+
+.blue-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    top: 712px;
+    right: 20px;
+    animation: star-spin 2000ms;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes multi-step-spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  25% {
+    transform: rotate(0.25turn);
+  }
+  50% {
+    transform: rotate(0.5turn);
+  }
+  75% {
+    transform: rotate(0.75turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.dark-blue-star {
+  position: absolute;
+  animation: multi-step-spin 2000ms;
+  animation-iteration-count: infinite;
+  top: 600px;
+  right: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    top: 1128px;
+    right: 360px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 1000px;
+    right: 360px;
+  }
+}

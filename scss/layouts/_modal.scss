@@ -1,0 +1,103 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(1, 31, 74, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 3;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  background-color: var(--color-main);
+  background-image: url(../images/modal-background.png);
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 680px;
+  border-radius: 48px;
+  padding: 42px;
+  overflow-y: auto;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-background@2x.png);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-white);
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-tablet) {
+      right: 42px;
+      top: 42px;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto 42px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__heading-wrap {
+    width: 100%;
+    max-width: 436px;
+    margin: 42px auto 40px;
+  }
+
+  &__heading {
+    font-family: 'Play', sans-serif;
+    font-size: 34px;
+    font-weight: 700px;
+    color: var(--color-white);
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
+  }
+
+  &__form-button {
+    display: block;
+    margin: 0 auto 8px;
+    width: 280px;
+    height: 54px;
+  }
+}

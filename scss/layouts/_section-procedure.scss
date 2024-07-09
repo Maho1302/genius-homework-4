@@ -1,0 +1,37 @@
+.section-procedure {
+  &__heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+      font-weight: 700px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-top: 48px;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}

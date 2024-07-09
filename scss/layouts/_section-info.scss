@@ -1,0 +1,107 @@
+.section-info {
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1060px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 0 0 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 48px;
+      padding: 48px 0 96px 0;
+    }
+  }
+
+  &__heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+      font-weight: 700px;
+    }
+  }
+
+  &__appointment {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__map {
+    height: 232px;
+    margin: 0 -20px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0;
+    justify-content: center;
+    order: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 380px;
+      height: 480px;
+      margin: auto;
+      border-radius: 32px;
+      order: 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 480px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 422px;
+    background-color: var(--color-main);
+    background-image: url(../images/form-background.png);
+    border-radius: 32px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/form-background@2x.png);
+    }
+  }
+
+  &__input {
+    margin-bottom: 16px;
+  }
+
+  &__form-paragraph {
+    margin-top: 48px;
+  }
+
+  &__contact-form {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto 42px;
+  }
+
+  &__form-button {
+    display: block;
+    margin: 0 auto 8px;
+    width: 240px;
+    height: 44px;
+    padding: 12px 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 280px;
+      height: 54px;
+      padding: 16px 32px;
+    }
+  }
+}

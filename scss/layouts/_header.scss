@@ -1,0 +1,66 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0 25px 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    background-color: var(--color-white-opacity);
+    padding: 32px 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__logo {
+    height: 30px;
+
+    @media screen and (min-width: $bp-desktop) {
+      height: 37px;
+    }
+  }
+
+  &__ul {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 56px;
+    }
+  }
+
+  &__icon-ul {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-main);
+    transition: color 0.2s;
+  }
+
+  &__icon:hover {
+    fill: var(--color-brand);
+  }
+
+  &__burger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    fill: var(--color-white);
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
